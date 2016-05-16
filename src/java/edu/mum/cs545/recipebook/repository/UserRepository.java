@@ -15,32 +15,36 @@ import edu.mum.cs545.recipebook.domain.UserEntity;
  */
 public interface UserRepository {
     
-    /**
+
+    public UserEntity createUser(UserEntity user);
+    
+     /**
      * Creates a new user.
      * 
      * @param user the {@link  User to create}
      * @return the created user with unique identifier set.
      */
-    public UserEntity createUser(UserEntity user);
     
+    
+    public void updateUser(UserEntity userEntity);
     /**
      * Updates existing user.
      * 
      * @param userEntity the {@link UserEntity} to update.
      */
-    public void updateUser(UserEntity userEntity);
-    
-    /**
+
+    public UserEntity findUserById(String userId);
+     /**
      * Find user by user Id.
      * @param userId the user Id.
      * @return the {@link UserEntity} if found, null otherwise.
      */
-    public UserEntity findUserById(String userId);
-    
-     /**
-     * Find user by user Id.
+  
+        
+    public UserEntity findUserByName(String userName);
+    /**
+     * Find user by user Name.
      * @param userName the user name.
      * @return the {@link UserEntity} if found, null otherwise.
      */
-    public UserEntity findUserByName(String userName);
 }

@@ -5,10 +5,12 @@
  */
 package edu.mum.cs545.recipebook.service;
 
+import edu.mum.cs545.recipebook.domain.UserEntity;
+
 /**
  *
  * @author Endalkachew Asnake
  */
 public interface UserServiceProvider {
-    
+    public boolean authenticate(UserEntity user);
 }

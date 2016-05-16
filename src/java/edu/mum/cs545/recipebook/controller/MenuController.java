@@ -5,10 +5,14 @@
  */
 package edu.mum.cs545.recipebook.controller;
 
+import javax.inject.Named;
+
 /**
  *
  * @author Endalkachew Asnake
  */
+
+@Named("menuBean")
 public class MenuController {
     
 }

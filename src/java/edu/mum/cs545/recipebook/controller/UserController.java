@@ -6,7 +6,7 @@
 package edu.mum.cs545.recipebook.controller;
 
 import edu.mum.cs545.recipebook.domain.UserEntity;
-import edu.mum.cs545.recipebook.service.UserServiceImpl;
+import edu.mum.cs545.recipebook.service.impl.UserServiceImpl;
 import edu.mum.cs545.recipebook.service.UserServiceProvider;
 import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
